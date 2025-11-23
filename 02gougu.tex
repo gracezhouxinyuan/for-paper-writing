@@ -1,0 +1,44 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{graphicx}%用于插入图片的宏包
+\title{杂谈勾股定理}
+\author{张三}
+\date{\today}
+
+\bibliographystyle{plain}
+
+\begin{document}
+
+\maketitle%创建标题
+\tableofcontents%创建标题
+\begin{abstract}%摘要部分
+    这是一篇关于勾股定理的小短文
+\end{abstract}
+\section{勾股定理在古代}%创建模块
+\begin{equation}
+    a(b+c)=ab+ac
+\end{equation}
+
+\begin{equation}
+    AB^2=BC^2+AC^2
+\end{equation}
+
+%\includegraphics[width=3cm]{02勾股_xiantu.png}
+%用于插入图片的指令
+%width宽度，scale放缩因子，height高度
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.6]{02勾股_xiantu.png}
+    \caption{宋赵爽在周髀算经注中作的弦图}
+    \label{fig:xiantu}
+\end{figure}
+%通过浮动体插入图片（便于控制位置，便于插入说明性的标题）
+
+\section{勾股定理在近代的形式}
+\emph{勾股数}%强调内容
+
+\begin{quote}%引用内容
+    \zihao{-5}\kaishu 引用的内容%改变引用部分的字体
+    勾广三，股修四，径隅五
+\end{quote}
+\end{document}

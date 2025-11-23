@@ -1,0 +1,54 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{booktabs}
+\begin{document}
+
+\begin{tabular}{lcr}
+%第二个花括号中的字母表示对齐格式（left，center，right）
+    left&center&right\\
+    本列左对齐&本列局中&本列右对齐\\
+%  每行后用\\换行，一行之内的不同列用&分开 
+\end{tabular}
+
+\[
+    \begin{array}{c|c}
+        %表格中可选的垂直对齐参数为：t：表格顶部对齐 b：表格底部对齐
+        \frac12&0\\
+        \hline
+        0&-\frac12\\        
+    \end{array}
+\]
+
+\begin{tabular}{|rr|}
+\hline
+    输入&输出\\ \hline
+    $-2$ &4\\
+    0&0\\
+    2&4\\
+    \hline
+\end{tabular}
+\qquad
+输入与输出有关系$y=x^2$
+
+\begin{tabular}{|c|rrr|p{4em}|}
+\hline
+    姓名&语文&数学&外语&备注\\
+\hline
+    张三&87&100&93&优秀\\
+    李四&75&63&52&补考另行通知\\
+    王小二&80&82&78&\\
+\hline
+\end{tabular}
+
+%含小数点的表格
+\begin{tabular}{|c|r@{.}l|}%可以实现小数点对齐!
+    \hline
+    收入& 12345&6 \\ \hline
+    支出& 765&43 \\ \hline
+    节余& 11580&17 \\ \hline
+\end{tabular}
+
+
+\end{document}
+
+
+
