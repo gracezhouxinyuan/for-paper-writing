@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{xcolor}
+
+\begin{document}
+
+\begin{algorithm}
+\caption{Optimal Order Quantity Simulation for Newsvendor Problem}
+\label{alg:newsvendor}
+\begin{algorithmic}[1]
+\Require Unit price $a$, unit cost $b$, Poisson parameter $\lambda$, number of simulations $N$
+\Ensure Optimal order quantity $u^*$
+\Statex
+\State \textbf{Initialization:}
+\State $M_{\text{prev}} \gets 0$ \Comment{Expected profit for order quantity $u=0$}
+\State $u \gets 1$ \Comment{Start testing from order quantity $u=1$}
+\Statex
+
+\While{True}
+    \State $\text{total\_profit} \gets 0$
+    \Statex
+    \For{$i \gets 1$ \textbf{to} $N$} \Comment{Simulation phase}
+        \State Generate random demand $X \sim \text{Poisson}(\lambda)$
+        \State $\text{sales} \gets \min(X, u)$
+        \State $\text{profit} \gets a \times \text{sales} - b \times u$
+        \State $\text{total\_profit} \gets \text{total\_profit} + \text{profit}$
+    \EndFor
+    \Statex
+    \State $M_{\text{current}} \gets \text{total\_profit} / N$ \Comment{Calculate average expected profit}
+    \Statex
+    \If{$M_{\text{current}} < M_{\text{prev}}$}
+        \State $u^* \gets u - 1$ \Comment{Optimal quantity found}
+        \State \textbf{break} \Comment{Exit the loop}
+    \Else
+        \State $M_{\text{prev}} \gets M_{\text{current}}$ \Comment{Update previous profit}
+        \State $u \gets u + 1$ \Comment{Test next order quantity}
+    \EndIf
+\EndWhile
+\Statex
+\State \textbf{return} $u^*$
+\end{algorithmic}
+\end{algorithm}
+
+\end{document}
