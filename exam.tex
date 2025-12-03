@@ -1,0 +1,233 @@
+\documentclass[withoutpreface,bwprint]{cumcmthesis}
+
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{url}   % 网页链接
+\usepackage{subcaption} % 子标题
+\usepackage{booktabs}
+\usepackage{makecell}%用于控制线宽的宏包
+\newcolumntype{L}{>{\raggedright\arraybackslash}X} 
+\title{全国大学生数学建模竞赛模板}
+\tihao{A}
+\baominghao{4321}
+\schoolname{XX大学}
+\membera{ }
+\memberb{ }
+\memberc{ }
+\supervisor{ }%辅导老师
+\yearinput{2023}
+\monthinput{9}
+\dayinput{8}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+\textbf{对于问题一,}
+
+\textbf{对于问题二,}
+
+\textbf{对于问题三,}
+
+\textbf{对于问题四,}
+
+\begin{enumerate}
+    \item 一句话陈述了本文研究的一般问题
+    \item 一两句话总结了整体方法、主要结果和结论
+    \item 一两句话回到一般背景，解释比以前的工作取得的进展，并概述针对各个问题展开介绍“方法+结果+优势”，例如我们可以说说自己避免了哪些问题，误差值是多少云云
+\end{enumerate}
+
+\keywords{\quad \quad  \quad  }
+
+\end{abstract}
+
+\tableofcontents
+
+\newpage
+
+\section{问题重述}
+
+\subsection{问题背景}
+
+\subsection{问题提出}
+
+\textbf{问题1：}  
+
+\textbf{问题2：}  
+
+\textbf{问题3：} 
+
+\textbf{问题4：}  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{问题分析}
+
+\subsection{问题一分析}
+对于问题一，
+
+\subsection{问题二分析}	
+对于问题二，
+
+\subsection{问题三分析}
+对于问题三，
+
+\subsection{问题四分析}
+对于问题四，
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\section{模型假设}
+\begin{itemize}[itemindent=2em]
+\item 假设1
+\item 假设2
+\item 假设3
+\item 假设4
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\section{符号说明}
+\begin{tabularx}{\textwidth}{LL}
+    \toprule
+    符号&含义\\ \midrule
+    $s_i$&第i种投资项目\\
+    $r_i$&$s_i$的平均收益率\\
+    $p_i$&$s_i$的交易费率\\
+    $q_i$&$s_i$的风险损失率\\
+    $u_i$&$s_i$的交易定额\\
+    $r_0$&同期银行利率\\
+    $x_i$&投资项目$s_i$的资金\\
+    a&总体风险度\\
+    Q&总体收益\\ \bottomrule
+\end{tabularx}
+
+\section{问题一的模型的建立和求解}
+
+\subsection{模型建立}
+
+\subsubsection{模型1名称}
+
+详细流程，算法可画流程图和示意图。
+
+\subsubsection{模型2名称}
+
+具体写作上的\LaTeX 技巧，{\Large\textbf{请参考此文件同目录下的技巧速查.tex!}}
+
+\subsection{模型求解结果}
+
+不光呈现结果，要进行仿真绘图和数据绘图，和前文的假设或者直观感受相符。
+
+还可以进行灵敏度的分析。
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\section{问题二的模型的建立和求解}
+
+\subsection{模型建立}
+
+
+\subsubsection{模型1名称}
+
+
+
+\subsubsection{模型2名称}
+
+
+
+\subsection{模型求解结果}
+
+问题二结果及分析。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\section{问题三的模型的建立和求解}
+
+\subsection{模型建立}
+
+\subsubsection{模型1名称}
+
+\subsubsection{模型2名称}
+
+\subsection{模型求解结果}
+
+问题三结果及分析。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\section{问题四的模型的建立和求解}
+
+\subsection{模型建立}
+
+\subsubsection{模型1名称}
+
+\subsubsection{模型2名称}
+
+\subsection{模型求解结果}
+
+问题四结果及分析。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{模型的评价}
+
+
+\subsection{模型的优点}
+\begin{itemize}[itemindent=2em]
+\item 优点1
+\item 优点2
+\item 优点3
+\end{itemize}
+
+\subsection{模型的缺点}
+\begin{itemize}[itemindent=2em]
+\item 缺点1
+\item 缺点2
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 参考文献
+
+
+\nocite{*}
+
+\begin{thebibliography}{99} 
+
+% 遵循 GB/T 7714-2015
+\bibitem{ref1} 昂温 G, 斯特朗 G. 概率论与数理统计[M]. 2版. 北京: 科学出版社, 2002.
+\bibitem{ref2} 张三, 李四. 关于A算法的优化研究[J]. 计算机学报, 2022, 45(10): 2100-2110.
+\end{thebibliography}
+
+
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 附录
+\begin{appendices}
+\section{文件列表}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{LL}
+\toprule
+文件名   & 功能描述 \\
+\midrule
+P1.py & 问题一程序代码 \\
+P2.py & 问题二程序代码 \\
+P3.py & 问题三程序代码 \\
+P4.py & 问题四程序代码 \\
+\bottomrule
+\end{tabularx}
+\label{tab:文件列表}
+\end{table}
+
+\section{代码}
+\noindent P1.py
+
+% 请把代码文件放在code文件夹里并写清楚路径
+%\lstinputlisting[language=python]{code/q2.py}
+%P2.py
+%\lstinputlisting[language=python]{code/q2.py}
+%P3.py
+
+\end{appendices}
+
+\end{document} 
